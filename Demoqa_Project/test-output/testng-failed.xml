@@ -6,7 +6,7 @@
       <class name="com.mvn.MainTest">
         <methods>
           <include name="beforeTest"/>
-          <include name="radioButtonDetails"/>
+          <include name="browserWindowsDetails"/>
           <include name="loadBrowser"/>
         </methods>
       </class> <!-- com.mvn.MainTest -->

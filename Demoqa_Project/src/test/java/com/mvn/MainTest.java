@@ -11,9 +11,17 @@ import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 import com.browser.BrowserConfiguration;
+import com.modules.AFWBrowserWindows;
+import com.modules.ElementBrokenLinks;
+import com.modules.ElementButtons;
 import com.modules.ElementCheckBox;
+import com.modules.ElementDynamic;
+import com.modules.ElementLinks;
 import com.modules.ElementRedioButton;
 import com.modules.ElementTextBox;
+import com.modules.ElementUploadDownload;
+import com.modules.ElementWebTable;
+import com.modules.FormPractise;
 
 public class MainTest {
 	WebDriver driver=null;
@@ -21,6 +29,17 @@ public class MainTest {
 	ElementTextBox et= null;
 	ElementCheckBox ec=null;
 	ElementRedioButton er=null;
+	ElementWebTable ew=null;
+	ElementButtons eb=null;
+	ElementLinks el=null;
+	ElementBrokenLinks ebl=null;
+	ElementUploadDownload eud=null;
+	ElementDynamic ed=null;
+	FormPractise fp=null;
+	
+	AFWBrowserWindows abw=null;
+		
+	
 	
 @BeforeClass
 	public void loadBrowser() throws InterruptedException
@@ -31,9 +50,21 @@ public class MainTest {
 
 @BeforeTest
 public void beforeTest() {
+	
 	et=new ElementTextBox();
 	ec= new ElementCheckBox();
 	er=new ElementRedioButton();
+	ew=new ElementWebTable();
+	eb=new ElementButtons();
+	el=new ElementLinks();
+	ebl=new ElementBrokenLinks();
+	eud=new ElementUploadDownload();
+	ed=new ElementDynamic();
+	fp=new FormPractise();
+	
+	abw=new AFWBrowserWindows();
+	
+	
 }
 
 @Ignore
@@ -53,12 +84,74 @@ public void checkboxDetails() throws InterruptedException {
 	ec.clickCheckbox(driver);
 }
 
-
+@Ignore
 @Test(priority = 3)
 public void radioButtonDetails() throws InterruptedException {
 	er.clickElement(driver);
 	er.clickRedioButton(driver);
 }
+
+@Ignore
+@Test(priority = 4)
+public void webtableDetails() throws InterruptedException {
+	ew.clickElement(driver);
+	ew.addTable(driver, "Swara", "Shah", "swara@gmail.com", "30", "100000", "CE");
+}
+
+@Ignore
+@Test(priority = 5)
+public void buttonsDetails() throws InterruptedException {
+	eb.clickElement(driver);
+	eb.buttonClick(driver);
+}
+
+@Ignore
+@Test(priority = 6)
+public void linksDetails() throws InterruptedException {
+	el.clickElement(driver);
+	el.clickLinks(driver);
+}
+
+@Ignore
+@Test(priority = 7)
+public void brokenlinksDetails() throws InterruptedException {
+	ebl.clickElement(driver);
+	ebl.clickBrokenlinks(driver);
+
+}
+
+@Ignore
+@Test(priority = 8)
+public void uploadDownloadDetails() throws InterruptedException {
+	eud.clickElement(driver);
+	eud.uploadImage(driver);
+	eud.downloadImage(driver);
+}
+
+@Ignore
+@Test(priority = 9)
+public void dynamicDetails() throws InterruptedException {
+	ed.clickElement(driver);
+	ed.dynamicClick(driver);
+	
+}
+
+@Ignore
+@Test(priority = 9)
+public void formDetails() throws InterruptedException {
+	fp.clickElement(driver);
+	fp.formFillUp(driver);
+	
+}
+
+@Ignore
+@Test(priority = 10)
+public void browserWindowsDetails() throws InterruptedException {
+	abw.clickElement(driver);
+	abw.browserWindows(driver);
+	
+}
+
 
 
 //@Ignore

@@ -24,6 +24,7 @@ public class ElementRedioButton {
 		Thread.sleep(5000);
 	}
 	
+	@Test(priority = 2)
 	public void clickRedioButton(WebDriver driver) throws InterruptedException {
 			
 		for (int i = 2; i < 4; i++) {

@@ -49,18 +49,19 @@ public void enterAddress(WebDriver driver,String caddress,String paddress) throw
 
 @Test(priority = 5)
 public void clickSubmit(WebDriver driver) throws InterruptedException {
-	Actions action=new Actions(driver);
-	llIntoView();", element);
-	action.click().perform();JavascriptExecutor js= (JavascriptExecutor) driver;
-	
-	WebElement element=driver.findElement(By.id("submit"));
-	js.executeScript("arguments[0].scro
+//	Actions action=new Actions(driver);
+//	
+//	action.click().perform();JavascriptExecutor js= (JavascriptExecutor) driver;
+//	
+//	WebElement element=driver.findElement(By.id("submit"));
+
 	
 	driver.findElement(By.id("submit")).click();
 	Thread.sleep(2000);
 	
 	System.out.println();
 	System.out.println("Output of TextBox is : ");
+	
 	WebElement output=driver.findElement(By.id("output"));
 	System.out.println(output.getText());
 	System.out.println();

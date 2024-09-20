@@ -2,23 +2,23 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-12T17:42:34 IST" name="Default suite" finished-at="2024-09-12T17:42:58 IST" duration-ms="24585">
+  <suite started-at="2024-09-20T17:55:16 IST" name="Default suite" finished-at="2024-09-20T17:55:31 IST" duration-ms="14096">
     <groups>
     </groups>
-    <test started-at="2024-09-12T17:42:34 IST" name="Default test" finished-at="2024-09-12T17:42:58 IST" duration-ms="24585">
+    <test started-at="2024-09-20T17:55:16 IST" name="Default test" finished-at="2024-09-20T17:55:31 IST" duration-ms="14096">
       <class name="com.mvn.MainTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.mvn.MainTest@6f10d5b6]" started-at="2024-09-12T17:42:34 IST" name="beforeTest" finished-at="2024-09-12T17:42:34 IST" duration-ms="13" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.mvn.MainTest@304bb45b]" started-at="2024-09-20T17:55:16 IST" name="beforeTest" finished-at="2024-09-20T17:55:17 IST" duration-ms="19" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="loadBrowser()[pri:0, instance:com.mvn.MainTest@6f10d5b6]" started-at="2024-09-12T17:42:34 IST" name="loadBrowser" finished-at="2024-09-12T17:42:44 IST" duration-ms="10024" status="PASS">
+        <test-method is-config="true" signature="loadBrowser()[pri:0, instance:com.mvn.MainTest@304bb45b]" started-at="2024-09-20T17:55:17 IST" name="loadBrowser" finished-at="2024-09-20T17:55:26 IST" duration-ms="9159" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadBrowser -->
-        <test-method signature="radioButtonDetails()[pri:3, instance:com.mvn.MainTest@6f10d5b6]" started-at="2024-09-12T17:42:44 IST" name="radioButtonDetails" finished-at="2024-09-12T17:42:58 IST" duration-ms="14489" status="PASS">
+        <test-method signature="browserWindowsDetails()[pri:10, instance:com.mvn.MainTest@304bb45b]" started-at="2024-09-20T17:55:26 IST" name="browserWindowsDetails" finished-at="2024-09-20T17:55:31 IST" duration-ms="4857" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- radioButtonDetails -->
+        </test-method> <!-- browserWindowsDetails -->
       </class> <!-- com.mvn.MainTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
