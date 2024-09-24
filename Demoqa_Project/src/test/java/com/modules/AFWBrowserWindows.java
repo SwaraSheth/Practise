@@ -22,6 +22,7 @@ public class AFWBrowserWindows {
 		 js.executeScript("window.scrollBy(0,400)");
 	}
 	
+	@Test(priority = 2)
 	public void browserWindows(WebDriver driver) throws InterruptedException {
 		String main_w= driver.getWindowHandle();
 		System.out.println("main window is :"+main_w);

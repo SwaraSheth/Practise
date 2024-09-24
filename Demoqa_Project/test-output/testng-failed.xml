@@ -6,8 +6,8 @@
       <class name="com.mvn.MainTest">
         <methods>
           <include name="beforeTest"/>
-          <include name="browserWindowsDetails"/>
           <include name="loadBrowser"/>
+          <include name="accordianDetails"/>
         </methods>
       </class> <!-- com.mvn.MainTest -->
     </classes>

@@ -11,7 +11,10 @@ import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 import com.browser.BrowserConfiguration;
+import com.modules.AFWAlerts;
 import com.modules.AFWBrowserWindows;
+import com.modules.AFWFrames;
+import com.modules.AFWModalDiologs;
 import com.modules.ElementBrokenLinks;
 import com.modules.ElementButtons;
 import com.modules.ElementCheckBox;
@@ -22,6 +25,7 @@ import com.modules.ElementTextBox;
 import com.modules.ElementUploadDownload;
 import com.modules.ElementWebTable;
 import com.modules.FormPractise;
+import com.modules.WidgetsAccordian;
 
 public class MainTest {
 	WebDriver driver=null;
@@ -38,7 +42,11 @@ public class MainTest {
 	FormPractise fp=null;
 	
 	AFWBrowserWindows abw=null;
-		
+	AFWAlerts aa=null;
+	AFWFrames af=null;
+	AFWModalDiologs amd=null;
+	
+	WidgetsAccordian wa=null;
 	
 	
 @BeforeClass
@@ -63,7 +71,11 @@ public void beforeTest() {
 	fp=new FormPractise();
 	
 	abw=new AFWBrowserWindows();
+	aa=new AFWAlerts();
+	af=new AFWFrames();
+	amd=new AFWModalDiologs();
 	
+	wa=new WidgetsAccordian();
 	
 }
 
@@ -152,7 +164,33 @@ public void browserWindowsDetails() throws InterruptedException {
 	
 }
 
+@Ignore
+@Test(priority = 11)
+public void alertsDetails() throws InterruptedException {
+	aa.clickElement(driver);
+	aa.alerts(driver);
+	
+}
 
+@Ignore
+@Test(priority = 12)
+public void framesDetails() throws InterruptedException {
+	af.clickElement(driver);
+	
+}
+
+@Ignore
+@Test(priority = 13)
+public void modalDiologsDetails() throws InterruptedException {
+	amd.clickElement(driver);
+	amd.modelDiologs(driver);
+}
+
+@Test(priority = 14)
+public void accordianDetails() throws InterruptedException {
+	wa.clickElement(driver);
+	wa.accordianClick(driver);
+}
 
 //@Ignore
 //@AfterClass

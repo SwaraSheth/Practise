@@ -2,23 +2,23 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-20T17:55:16 IST" name="Default suite" finished-at="2024-09-20T17:55:31 IST" duration-ms="14096">
+  <suite started-at="2024-09-24T17:18:25 IST" name="Default suite" finished-at="2024-09-24T17:18:50 IST" duration-ms="24891">
     <groups>
     </groups>
-    <test started-at="2024-09-20T17:55:16 IST" name="Default test" finished-at="2024-09-20T17:55:31 IST" duration-ms="14096">
+    <test started-at="2024-09-24T17:18:25 IST" name="Default test" finished-at="2024-09-24T17:18:50 IST" duration-ms="24891">
       <class name="com.mvn.MainTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.mvn.MainTest@304bb45b]" started-at="2024-09-20T17:55:16 IST" name="beforeTest" finished-at="2024-09-20T17:55:17 IST" duration-ms="19" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.mvn.MainTest@45d84a20]" started-at="2024-09-24T17:18:25 IST" name="beforeTest" finished-at="2024-09-24T17:18:25 IST" duration-ms="20" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="loadBrowser()[pri:0, instance:com.mvn.MainTest@304bb45b]" started-at="2024-09-20T17:55:17 IST" name="loadBrowser" finished-at="2024-09-20T17:55:26 IST" duration-ms="9159" status="PASS">
+        <test-method is-config="true" signature="loadBrowser()[pri:0, instance:com.mvn.MainTest@45d84a20]" started-at="2024-09-24T17:18:25 IST" name="loadBrowser" finished-at="2024-09-24T17:18:38 IST" duration-ms="13253" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadBrowser -->
-        <test-method signature="browserWindowsDetails()[pri:10, instance:com.mvn.MainTest@304bb45b]" started-at="2024-09-20T17:55:26 IST" name="browserWindowsDetails" finished-at="2024-09-20T17:55:31 IST" duration-ms="4857" status="PASS">
+        <test-method signature="accordianDetails()[pri:14, instance:com.mvn.MainTest@45d84a20]" started-at="2024-09-24T17:18:38 IST" name="accordianDetails" finished-at="2024-09-24T17:18:50 IST" duration-ms="11544" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- browserWindowsDetails -->
+        </test-method> <!-- accordianDetails -->
       </class> <!-- com.mvn.MainTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
